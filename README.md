@@ -16,6 +16,21 @@ yang dibuat untuk tujuan **edukasi dan pembelajaran**.
 
 ## Cara Install
 ```bash
+Installation (Linux)
 git clone https://github.com/san154-af/SafeSimpleOSINT.git
 cd SafeSimpleOSINT
+pip3 install -r requirements.txt
 python3 safe_simple_osint.py --yes
+
+Update
+cd SafeSimpleOSINT
+git pull
+pip3 install -r requirements.txt --upgrade
+python3 safe_simple_osint.py --yes
+
+Optional (Virtual Environment – Recommended)
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 safe_simple_osint.py --yes
+
